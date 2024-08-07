@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>示例代码说明 | gogeo应用开发前端文档</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="stylesheet" href="/gogeo-frontend-docs/style/custom.css">
+    <meta name="description" content="gogeo应用开发前端文档">
+    
+    <link rel="preload" href="/gogeo-frontend-docs/assets/css/0.styles.05dd83b0.css" as="style"><link rel="preload" href="/gogeo-frontend-docs/assets/js/app.ea07af85.js" as="script"><link rel="preload" href="/gogeo-frontend-docs/assets/js/2.9c12b71b.js" as="script"><link rel="preload" href="/gogeo-frontend-docs/assets/js/1.e64d02f8.js" as="script"><link rel="preload" href="/gogeo-frontend-docs/assets/js/30.bd577743.js" as="script"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/10.92c55da0.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/11.6aafaae2.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/12.518b716b.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/13.fbbff657.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/14.42991e2a.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/15.5bb490af.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/16.e37df2a1.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/17.07eff4c7.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/18.87da4873.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/19.0741f0b9.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/20.9f94b747.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/21.60375cff.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/22.9a98e290.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/23.080f2413.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/24.d2453b45.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/25.a77be4eb.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/26.5d8f1715.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/27.6cf5b958.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/28.fb85bb05.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/29.dc731149.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/3.27de13c3.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/31.8de37a62.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/32.3fc9f0cf.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/33.fb571ab7.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/34.b96f922c.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/35.b2999c75.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/36.44dd023f.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/37.647adbe3.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/38.3139bc7c.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/39.3984b781.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/4.e74f93aa.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/40.57380854.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/41.ce5c3df8.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/42.7f153f1f.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/43.5ef326c8.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/44.d396c0c4.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/45.74239419.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/46.88dbc4ab.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/47.0c449a9f.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/48.fb820648.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/49.78a112d1.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/5.c355cd69.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/50.f8e98a1a.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/51.62d2ca30.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/6.e3b04c93.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/7.5a67c1b4.js"><link rel="prefetch" href="/gogeo-frontend-docs/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/gogeo-frontend-docs/assets/css/0.styles.05dd83b0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/gogeo-frontend-docs/" class="home-link router-link-active"><!----> <span class="site-name">gogeo应用开发前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/gogeo-frontend-docs/frontend/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/components/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/map/" class="nav-link">
+  地图
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/widget/" class="nav-link">
+  挂件
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/report/" class="nav-link">
+  洞察
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/gogeo-frontend-docs/frontend/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/components/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/map/" class="nav-link">
+  地图
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/widget/" class="nav-link">
+  挂件
+</a></div><div class="nav-item"><a href="/gogeo-frontend-docs/report/" class="nav-link">
+  洞察
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/gogeo-frontend-docs/frontend/" aria-current="page" class="sidebar-link">指南</a></li><li><a href="/gogeo-frontend-docs/frontend/config.html" class="sidebar-link">配置</a></li><li><a href="/gogeo-frontend-docs/frontend/info.html" class="sidebar-link">系统信息</a></li><li><a href="/gogeo-frontend-docs/frontend/icon.html" class="sidebar-link">图标</a></li><li><a href="/gogeo-frontend-docs/frontend/utils.html" class="sidebar-link">工具</a></li><li><a href="/gogeo-frontend-docs/frontend/crud.html" class="sidebar-link">CRUD示例</a></li><li><a href="/gogeo-frontend-docs/frontend/primary.html" class="sidebar-link">主题色</a></li><li><a href="/gogeo-frontend-docs/frontend/eslint.html" class="sidebar-link">代码规范</a></li><li><a href="/gogeo-frontend-docs/frontend/appkitDeom.html" aria-current="page" class="active sidebar-link">示例代码说明</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/gogeo-frontend-docs/frontend/appkitDeom.html#布局" class="sidebar-link">布局</a></li><li class="sidebar-sub-header"><a href="/gogeo-frontend-docs/frontend/appkitDeom.html#左侧布局css" class="sidebar-link">左侧布局css</a></li><li class="sidebar-sub-header"><a href="/gogeo-frontend-docs/frontend/appkitDeom.html#弹窗" class="sidebar-link">弹窗</a></li><li class="sidebar-sub-header"><a href="/gogeo-frontend-docs/frontend/appkitDeom.html#挂件" class="sidebar-link">挂件</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="示例代码说明"><a href="#示例代码说明" class="header-anchor">#</a> 示例代码说明</h1> <h2 id="布局"><a href="#布局" class="header-anchor">#</a> 布局</h2> <h3 id="页面布局"><a href="#页面布局" class="header-anchor">#</a> 页面布局</h3> <p><code>appkit/subdivisionPlan/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;appkitPage&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>go-row <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;layoutRow&quot;</span><span class="token operator">&gt;</span>
+
+
+      <span class="token operator">&lt;</span>/go-row<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/template<span class="token operator">&gt;</span>
+</code></pre></div><img src="/assets/guide/layout/page.jpg" class="custom-image" style="width:100%;"> <h3 id="左右布局"><a href="#左右布局" class="header-anchor">#</a> 左右布局</h3> <p><code>appkit/subdivisionPlan/index.vue</code></p> <p>一个go-row会把整行分成24份</p> <p>每个go-col的 span代表该col占据24中的多少份</p> <p>如：左边crud占据 16/24宽度  右边挂件 8/24宽度</p> <div class="language-sh extra-class"><pre class="language-sh"><code>   <span class="token operator">&lt;</span>go-row <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;layoutRow&quot;</span><span class="token operator">&gt;</span>
+     <span class="token operator">&lt;</span>go-col :span<span class="token operator">=</span><span class="token string">&quot;16&quot;</span> <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;layoutCol&quot;</span><span class="token operator">&gt;</span>
+     <span class="token operator">&lt;</span>/go-col<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>go-col :span<span class="token operator">=</span><span class="token string">&quot;24&quot;</span> <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;layoutCol&quot;</span><span class="token operator">&gt;</span>
+     <span class="token operator">&lt;</span>/go-col<span class="token operator">&gt;</span>
+   <span class="token operator">&lt;</span>/go-row<span class="token operator">&gt;</span>
+</code></pre></div><img src="/assets/guide/layout/col.jpg" class="custom-image" style="width:100%;"> <h3 id="左侧布局"><a href="#左侧布局" class="header-anchor">#</a> 左侧布局</h3> <p><code>appkit/subdivisionPlan/index.vue</code></p> <img src="/assets/guide/layout/crud.jpg" class="custom-image" style="width:100%;"> <h4 id="左侧布局-头部"><a href="#左侧布局-头部" class="header-anchor">#</a> 左侧布局-头部</h4> <p><code>appkit/labelApplication/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;appkitPageHeader&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;title_left_slot&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>i <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;el-icon-s-operation&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/i<span class="token operator">&gt;</span>
+      标签应用
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;title_right_slot&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>go-button <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">&quot;primary&quot;</span> <span class="token operator">&gt;</span>按钮<span class="token operator">&lt;</span>/go-button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><h4 id="左侧布局-curd-筛选条件"><a href="#左侧布局-curd-筛选条件" class="header-anchor">#</a> 左侧布局-curd-筛选条件</h4> <p><code>appkit/subdivisionPlan/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;crud&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;filterForm&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;filters&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><h4 id="左侧布局-curd-table"><a href="#左侧布局-curd-table" class="header-anchor">#</a> 左侧布局-curd-table</h4> <p><code>appkit/subdivisionPlan/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;crud&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;tableWra&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>go-table <span class="token assign-left variable">ref</span><span class="token operator">=</span><span class="token string">&quot;myTable&quot;</span> v-loading<span class="token operator">=</span><span class="token string">&quot;tableLoading&quot;</span> highlight-current-row <span class="token assign-left variable">height</span><span class="token operator">=</span><span class="token string">&quot;100%&quot;</span> :data<span class="token operator">=</span><span class="token string">&quot;tableData&quot;</span> @selection-change<span class="token operator">=</span><span class="token string">&quot;onSelectionChange&quot;</span> @current-change<span class="token operator">=</span><span class="token string">&quot;onCurrentChange&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/go-table<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><h4 id="左侧布局-curd-分页"><a href="#左侧布局-curd-分页" class="header-anchor">#</a> 左侧布局-curd-分页</h4> <p><code>appkit/subdivisionPlan/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;crud&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;pageWra&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>goPagination v-model<span class="token operator">=</span><span class="token string">&quot;tableParams&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/goPagination<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="左侧布局css"><a href="#左侧布局css" class="header-anchor">#</a> 左侧布局css</h2> <p><code>appkit/subdivisionPlan/index.vue</code></p> <p>本页面curd部分由  <code>筛选条件</code> + <code>表格</code> + <code>分页</code> 组成</p> <p>定义 <code>分页</code>和 <code>筛选条件</code> 高度分别为 40 和 70</p> <div class="language-sh extra-class"><pre class="language-sh"><code>  --pageHeight:40px<span class="token punctuation">;</span>
+  --filterFormHeight:70px<span class="token punctuation">;</span>
+</code></pre></div><p>则列表高度为 总高度减去其他</p> <div class="language-sh extra-class"><pre class="language-sh"><code>.tableWra <span class="token punctuation">{</span>
+  height: calc<span class="token punctuation">(</span><span class="token number">100</span>% - var<span class="token punctuation">(</span>--filterFormHeight<span class="token punctuation">)</span> - var<span class="token punctuation">(</span>--pageHeight<span class="token punctuation">))</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>再设置go-table高度为100%
+可铺满全屏并流式滚动</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token operator">&lt;</span>go-table <span class="token assign-left variable">height</span><span class="token operator">=</span><span class="token string">&quot;100%&quot;</span> <span class="token operator">&gt;</span>
+</code></pre></div><h2 id="弹窗"><a href="#弹窗" class="header-anchor">#</a> 弹窗</h2> <h4 id="弹窗data定义"><a href="#弹窗data定义" class="header-anchor">#</a> 弹窗data定义</h4> <p><code>appkit/subdivisionPlan/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>  editPlanObj: <span class="token punctuation">{</span>
+    visible: false, //修改editPlanObj.visible控制弹窗显示隐藏
+    loading: false, //修改editPlanObj.visible控制弹窗确认按钮加载状态
+    plan: null  //弹窗内组件需要的信息
+  <span class="token punctuation">}</span>,
+</code></pre></div><h4 id="弹窗template"><a href="#弹窗template" class="header-anchor">#</a> 弹窗template</h4> <p><code>appkit/subdivisionPlan/index.vue</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token operator">&lt;</span>myPopup
+    v-if<span class="token operator">=</span><span class="token string">&quot;editPlanObj.visible&quot;</span>
+    <span class="token assign-left variable">myTitle</span><span class="token operator">=</span><span class="token string">&quot;编辑方案&quot;</span>
+    :visible.sync<span class="token operator">=</span><span class="token string">&quot;editPlanObj.visible&quot;</span>
+    append-to-body
+    center
+    <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;500px&quot;</span>
+    @close<span class="token operator">=</span><span class="token string">&quot;editPlanObj.visible = null&quot;</span>
+  <span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>editPlanComp
+      v-if<span class="token operator">=</span><span class="token string">&quot;editPlanObj.visible&quot;</span>
+      :loading<span class="token operator">=</span><span class="token string">&quot;editPlanObj.loading&quot;</span>
+      :form<span class="token operator">=</span><span class="token string">&quot;editPlanObj.form&quot;</span>
+      @onPopupClose<span class="token operator">=</span><span class="token string">&quot;editPlanObj.visible = null&quot;</span>
+      @onEditPlan<span class="token operator">=</span><span class="token string">&quot;onEditPlan&quot;</span>
+    <span class="token operator">&gt;</span><span class="token operator">&lt;</span>/editPlanComp<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/myPopup<span class="token operator">&gt;</span>
+</code></pre></div><h4 id="弹窗内组件"><a href="#弹窗内组件" class="header-anchor">#</a> 弹窗内组件</h4> <p><code>appkit/subdivisionPlan/components/editPlan/index.vue</code></p> <p>接收参数</p> <div class="language-sh extra-class"><pre class="language-sh"><code>props: <span class="token punctuation">{</span>
+  loading: <span class="token punctuation">{</span><span class="token punctuation">}</span>, //确认按钮加载状态
+<span class="token punctuation">}</span>,
+</code></pre></div><h2 id="挂件"><a href="#挂件" class="header-anchor">#</a> 挂件</h2> <p><a href="/gogeo-frontend-docs/components/widget.html">见挂件</a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/gogeo-frontend-docs/frontend/eslint.html" class="prev">
+        代码规范
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/gogeo-frontend-docs/assets/js/app.ea07af85.js" defer></script><script src="/gogeo-frontend-docs/assets/js/2.9c12b71b.js" defer></script><script src="/gogeo-frontend-docs/assets/js/1.e64d02f8.js" defer></script><script src="/gogeo-frontend-docs/assets/js/30.bd577743.js" defer></script>
+  </body>
+</html>

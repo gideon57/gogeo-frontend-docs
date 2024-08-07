@@ -1,1 +1,0 @@
-# gogeo-frontend-docs
